@@ -1,77 +1,59 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-}
-
-header {
-    background-color: #005bac;
-    color: #ffd700;
-    padding: 10px 20px;
-    text-align: center;
-    font-size: 1.5rem;
-}
-
-main {
-    padding: 20px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-input[type="text"], select {
-    padding: 10px;
-    border: 1px solid #005bac;
-    border-radius: 5px;
-    font-size: 1rem;
-    width: 100%;
-}
-
-button {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #ffd700;
-    color: #005bac;
-    font-size: 1rem;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #ffc400;
-}
-
-ul {
+ul.results {
     list-style: none;
     padding: 0;
+    margin: 30px 0;
 }
-
-li {
-    background: #fff;
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-li:nth-child(even) {
-    background-color: #f0f8ff;
-}
-
-footer {
-    text-align: center;
-    padding: 10px 20px;
+body{
     background-color: #005bac;
-    color: #ffd700;
-    font-size: 0.9rem;
+    color: #ffcc00;
 }
+
+li.result-item {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+li.result-item:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+
+.line-number {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #005bac;
+    text-transform: uppercase;
+    padding: 5px;
+    background-color: #ffd700;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.schedule-time {
+    font-size: 1.1rem;
+    color: #333;
+    margin-top: 10px;
+}
+button{
+    background-color: yellow;
+}
+
+
+.schedule-icon {
+    font-size: 1.5rem;
+    color: #ffd700;
+    margin-right: 10px;
+}
+
+li.result-item .details {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
